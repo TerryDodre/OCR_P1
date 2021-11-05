@@ -1,35 +1,31 @@
 body{
+	margin: 0px;
 	font-family: 'Raleway';
 }
 
 header{
-	/* position: absolute;
-	top: 0;
-	left: 0; */
 	width: 100%;
 	height: 130px;
 }
 
 header img{
-	position: absolute;
-	//changer ça
-	top: 50%;
-	transform: translateY(-50%);
-	margin-left: 85px;
 	height: 50px;
 	width: auto;
+	margin-left: 85px;
+	margin-top: 40px;
 }
 
 header .navbar-content{
 	float: right;
 	margin-right: 30px;
+	font-weight: 600;
 	font-size: 18px;
 }
 
 header .navbar-nav{
-	margin: 0;
 	height: 100px;
 	padding: 0px;
+	margin: 0;
 }
 
 header .navbar-item{
@@ -43,6 +39,7 @@ header .navbar-item{
 
 header .navbar-item:hover{
 	box-shadow: 0 2px 0 #0065FC inset;
+	cursor: pointer;
 }
 
 header .navbar-item a{
@@ -56,14 +53,14 @@ header .navbar-item a:hover{
 }
 
 #search_zone{
-	margin-top: 130px;
+	margin-top: 0px;
 	margin-left: 60px;
 	margin-right: 60px;
 }
 
 #search_zone .catch_line h1{
 	font-size: 25px;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 #search_zone .catch_line p{
@@ -82,6 +79,10 @@ header .navbar-item a:hover{
 	border: none;
 	border-top-left-radius: 18px;
 	border-bottom-left-radius: 18px;
+}
+
+#search_zone .search_bar .button_grey:hover{
+	cursor: pointer;
 }
 
 #search_zone .search_bar img{
@@ -116,6 +117,10 @@ header .navbar-item a:hover{
 	border-bottom-right-radius: 18px;
 }
 
+#search_zone .search_bar .button_blue:hover{
+	cursor: pointer;
+}
+
 #search_zone .filter{
 	display: flex;
 	margin-top: 35px;
@@ -136,6 +141,10 @@ header .navbar-item a:hover{
 	font-family: 'Raleway';
 	font-size: 20px;
 	font-weight: 600;
+}
+
+#search_zone .filter button:hover{
+	cursor: pointer;
 }
 
 #search_zone .information{
@@ -172,8 +181,8 @@ header .navbar-item a:hover{
 
 #accommodation .accommodation_marseille{
 	height: auto;
-	width: auto;
-	padding: 40px;
+	width: 65%;
+	/* padding: 40px; */
 	padding-top: 20px;
 	border-radius: 20px;
 	background-color: #F2F2F2;
@@ -182,22 +191,93 @@ header .navbar-item a:hover{
 #accommodation .accommodation_marseille h1{
 	font-size: 25px;
 	font-weight: 600;
+	margin-left: 50px;
+}
+
+#accommodation .accommodation_marseille .flexMarseille{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #accommodation .accommodation_marseille span{
 	display: flex;
-	/* height: auto; */
-	/* width: auto; */
-	/* padding: 8px; */
+	flex-direction: column;
+	height: auto;
+	width: 27%;
+	min-width: 200px;
+	margin-bottom: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 6px;
 	border-radius: 20px;
 	background-color: white;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.15);
 }
 
 #accommodation .accommodation_marseille img{
-	height: 130px;
-	width: 250px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+	height: 140px;
+	width: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 	object-fit: cover;
 }
 
+#accommodation .accommodation_marseille h2{
+	margin: 10px;
+	margin-left: 15px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+#accommodation .accommodation_tendance{
+	height: auto;
+	width: 30%;
+	margin-left: 60px;
+	padding-top: 20px;
+	border-radius: 20px;
+	background-color: #F2F2F2;
+}
+
+#accommodation .accommodation_tendance h1{
+	font-size: 25px;
+	font-weight: 600;
+	margin-left: 50px;
+}
+
+#accommodation .accommodation_tendance .boxTendance{
+	display: flex;
+	height: auto;
+	width: auto;
+	min-width: 200px;
+	margin-bottom: 40px;
+	margin-left: 45px;
+	margin-right: 45px;
+	padding: 6px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.15);
+}
+
+#accommodation .accommodation_tendance img{
+	height: 180px;
+	width: 36%;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	object-fit: cover;
+}
+
+#accommodation .accommodation_tendance .boxTendance span h2{
+	margin: 10px;
+	margin-left: 15px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+#accommodation .accommodation_tendance .boxTendance span p{
+	margin: 10px;
+	margin-left: 15px;
+	font-size: 18px;
+}
