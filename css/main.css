@@ -3,15 +3,16 @@ body{
 }
 
 header{
-	position: absolute;
+	/* position: absolute;
 	top: 0;
-	left: 0;
+	left: 0; */
 	width: 100%;
 	height: 130px;
 }
 
 header img{
 	position: absolute;
+	//changer ça
 	top: 50%;
 	transform: translateY(-50%);
 	margin-left: 85px;
@@ -161,3 +162,42 @@ header .navbar-item a:hover{
 	margin-left: 10px;
 	font-size: 18px;
 }
+
+#accommodation{
+	margin-top: 30px;
+	margin-left: 60px;
+	margin-right: 60px;
+	display: flex;
+}
+
+#accommodation .accommodation_marseille{
+	height: auto;
+	width: auto;
+	padding: 40px;
+	padding-top: 20px;
+	border-radius: 20px;
+	background-color: #F2F2F2;
+}
+
+#accommodation .accommodation_marseille h1{
+	font-size: 25px;
+	font-weight: 600;
+}
+
+#accommodation .accommodation_marseille span{
+	display: flex;
+	/* height: auto; */
+	/* width: auto; */
+	/* padding: 8px; */
+	border-radius: 20px;
+	background-color: white;
+}
+
+#accommodation .accommodation_marseille img{
+	height: 130px;
+	width: 250px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	object-fit: cover;
+}
+
