@@ -232,6 +232,11 @@ header .navbar-item a:hover{
 	font-weight: 600;
 }
 
+#accommodation .accommodation_marseille p{
+	margin: 0;
+	margin-left: 15px;
+}
+
 #accommodation .accommodation_tendance{
 	height: auto;
 	width: 30%;
